@@ -26,9 +26,9 @@ function nextVocabulary() {
 
 function compare() {
   if (englishVocabulary.value === randomEnglishWord) {
-    result.innerHTML = `Correct! Try the next one.`;
+    result.innerHTML = `<strong>Correct!</strong><br> Try the next one.`;
   } else {
-    result.innerHTML = `False! Try the next one.`;
+    result.innerHTML = `<strong>False!</strong><br> Try the next one.`;
   }
   englishVocabulary.value = '';
   nextVocabulary();
