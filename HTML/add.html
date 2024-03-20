@@ -34,24 +34,29 @@
 
             <h5 class="m-3 mt-0">Enter the <strong>English</strong> word:</h5>
             <div class="form-floating m-3">
-              <input class="form-control" type="text" id="englishVocabulary">
+              <input required class="form-control" type="text" id="englishVocabulary">
               <label for="englishVocabulary">English</label>
             </div>
 
             <h5 class="m-3">Enter the <strong>German</strong> word:</h5>
             <div class="form-floating m-3" >
-                <input class="form-control" type="text" id="germanVocabulary">
+                <input required class="form-control" type="text" id="germanVocabulary">
                 <label for="germanVocabulary">German</label>
             </div>
 
             <button type="submit" class="btn btn-outline-primary m-3">Add Word</button>
+            <button class="btn btn-outline-primary"><a class="text-decoration-none" href="/HTML/index.html">Test Your Skills</a></button>
           </form>
 
-          <h4 class="m-3 mt-5">List of words:</h4>
+          <hr class="m-3 mt-4 mb-5">
+
+          <h4 class="m-3">List of words:</h4>
 
           <ul id="vocabularyList">
 
           </ul>
+
+          <button onclick="deleteList()" type="button" class="btn btn-outline-danger m-3">Delete List</button>
 
         </div>
       </main>

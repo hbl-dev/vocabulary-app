@@ -33,3 +33,8 @@ function compare() {
   englishVocabulary.value = '';
   nextVocabulary();
 }
+
+function deleteList() {
+  localStorage.removeItem('dictionary');
+  vocabularyList.innerHTML = '';
+}
