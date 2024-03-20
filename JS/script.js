@@ -14,7 +14,7 @@ function addVocabulary() {
 function render() {
   vocabularyList.innerHTML = '';
   for (let key in dictionary) {
-    vocabularyList.innerHTML += `<li>${key} - ${dictionary[key]}</li>`;
+    vocabularyList.innerHTML += `<li>English: <strong>${key}</strong> – German: <strong>${dictionary[key]}</strong></li>`;
   }
 }
 
