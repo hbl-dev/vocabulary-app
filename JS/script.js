@@ -21,7 +21,11 @@ function render() {
 function nextVocabulary() {
   let objectKeys = Object.keys(dictionary);
   randomEnglishWord = objectKeys[Math.floor(Math.random() * objectKeys.length)];
-  word.innerHTML = `${dictionary[randomEnglishWord]}`;
+  if (dictionary[randomEnglishWord] === undefined) {
+    word.innerHTML = `No Vocabulary – Go add words.`;
+  } else {
+    word.innerHTML = `${dictionary[randomEnglishWord]}`;
+  }
 }
 
 function compare() {
