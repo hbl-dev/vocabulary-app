@@ -30,9 +30,9 @@ function nextVocabulary() {
 
 function compare() {
   if (englishVocabulary.value === randomEnglishWord) {
-    result.innerHTML = `<strong>Correct!</strong><br> Try the next one.`;
+    result.innerHTML = `<strong class="text-success">Correct!</strong><br> Try the next one.`;
   } else {
-    result.innerHTML = `<strong>False!</strong><br> Try the next one.`;
+    result.innerHTML = `<strong class="text-danger">False!</strong><br> Try the next one.`;
   }
   englishVocabulary.value = '';
   nextVocabulary();
