@@ -22,7 +22,7 @@ function nextVocabulary() {
   let objectKeys = Object.keys(dictionary);
   randomEnglishWord = objectKeys[Math.floor(Math.random() * objectKeys.length)];
   if (dictionary[randomEnglishWord] === undefined) {
-    word.innerHTML = `No words yet – go add some.`;
+    word.innerHTML = `No words added yet – go add some.`;
   } else {
     word.innerHTML = `${dictionary[randomEnglishWord]}`;
   }
